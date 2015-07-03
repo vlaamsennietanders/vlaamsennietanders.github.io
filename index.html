@@ -102,24 +102,15 @@
 		introHeadingH = introEl.find('h1').height();
  
 		introEl.css('padding', (windowH - introHeadingH)/2 + 'px 0');
- 
-		$(document).on('scroll', function() {
-			
-			$(document).off('scroll'); 
-			$('html, body').animate({
-				scrollTop: $(".content").offset().top
-			}, 1000, function(){
-						
-						
-				// $(document).on('scroll', function() {
-// 					if($(".content").offset().top == $(document).scrollTop()){
-// 						//	up();
-// 						console.log("yes");
-//
-// 					}
-// 				});
-			});
-		});
+		$($(".content")[0]).css('padding', (windowH - $($(".content")[0]).height())/2 + 'px 0');
+		
+		// $(document).on('scroll', function() {
+		//
+		// 	$(document).off('scroll');
+		// 	$('html, body').animate({
+		// 		scrollTop: $(".content").offset().top
+		// 	}, 1000);
+		// });
 	};
 			
 	// var up = function(){
