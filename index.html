@@ -18,7 +18,7 @@
 		background-size: cover;*/
 	}
 	#een { 
-	  background: url('https://upload.wikimedia.org/wikipedia/commons/9/90/VlaamseStrijdvlag.svg') no-repeat center center fixed; 
+	  background: url('https://upload.wikimedia.org/wikipedia/commons/2/2b/Flag_of_Flanders.svg') no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -102,7 +102,8 @@
 		introHeadingH = introEl.find('h1').height();
  
 		introEl.css('padding', (windowH - introHeadingH)/2 + 'px 0');
-		$($(".content")[0]).css('padding', (windowH - $($(".content")[0]).height())/2 + 'px 0');
+		$($(".content")[0])
+		.css('padding', (windowH - $($(".content")[0]).height())/2 + 'px 0');
 		
 		// $(document).on('scroll', function() {
 		//
