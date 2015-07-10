@@ -19,7 +19,30 @@
   background-size: 100%;
 }
 
-h1 {
-  hyphens: manual;
-  font-size: 3.3rem; line-height: 1.25; letter-spacing: -.1rem;
+@media screen and (max-width: 712px) {
+  #p1 {
+    background: url(/images/mobile/VVB_Affiche.jpg) no-repeat;
+    background-size: 100%;
+  }
+
+  #p2 {
+    background: url(/images/mobile/Foto1.jpg) no-repeat;
+    background-size: 100%;
+
+  }
+
+  #p3 {
+    background: url(/images/mobile/Foto2.jpg) no-repeat;
+    background-size: 100%;
+  }
+
+  #p4 {
+    background: url(/images/mobile/Foto4.jpeg) no-repeat;
+    background-size: 100%;
+  }
+
+  h1 {
+    hyphens: manual;
+    font-size: 3.3rem; line-height: 1.25; letter-spacing: -.1rem;
+  }
 }
