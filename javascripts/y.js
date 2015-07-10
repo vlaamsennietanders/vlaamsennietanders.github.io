@@ -15,7 +15,7 @@
  */
 
 
-$( document ).ready(function() {
+$( window ).load(function() {
   var iOS = ( navigator.userAgent.match(/iPad|iPhone|iPod/g) ? true : false );
   console.log('[*]');
   var windowH = $(window).height(),

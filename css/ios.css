@@ -1,20 +1,25 @@
 #p1 {
-  background: url(/images/VVB_Affiche.jpg) no-repeat center center fixed;
+  background: url(/images/VVB_Affiche.jpg) no-repeat;
   background-size: 100%;
 }
 
 #p2 {
-  background: url(/images/Foto1.jpg) no-repeat center center fixed;
+  background: url(/images/Foto1.jpg) no-repeat;
   background-size: 100%;
 
 }
 
 #p3 {
-  background: url(/images/Foto2.jpg) no-repeat center center fixed;
+  background: url(/images/Foto2.jpg) no-repeat;
   background-size: 100%;
 }
 
 #p4 {
-  background: url(/images/Foto4.jpeg) no-repeat center center fixed;
+  background: url(/images/Foto4.jpeg) no-repeat;
   background-size: 100%;
+}
+
+h1 {
+  hyphens: manual;
+  font-size: 3.3rem; line-height: 1.25; letter-spacing: -.1rem;
 }
