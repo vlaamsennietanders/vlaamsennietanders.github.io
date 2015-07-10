@@ -37,10 +37,10 @@ $( document ).ready(function() {
 
         // just in case it is not already loaded
         $(image).load(function () {
-            //alert(image.height/(image.width/windowsW));
+            //alert(image.height/(image.width/windowW));
 
             console.log(image.height/(image.width/windowW));
-
+            //$($('.intropic')[index]).css('padding', (image.height)/2 + 'px 0');
             $($('.intropic')[index]).css('padding', (image.height/(image.width/windowW))/2 + 'px 0');
         });
 
