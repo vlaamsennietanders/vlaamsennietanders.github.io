@@ -23,7 +23,7 @@ $( window ).load(function() {
   introEl = $('div.intropic'),
   introHeadingH = introEl.height();
 
-  if(iOS){
+  if(iOS || windowW < 712){
     $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'css/ios.css') );
     $('.segment').each(function(index){
       var image_url = $(this).css('background-image'), image;
