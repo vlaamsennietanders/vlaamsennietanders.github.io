@@ -48,6 +48,8 @@ $( document ).ready(function() {
       }
     });
   } else {
-      introEl.css('padding', (windowH - introHeadingH)/2 + 'px 0');
+    $('div.intropic').each(function(){
+      $(this).css('padding', (windowH - $(this).height())/2 + 'px 0');
+    });
   }
 });
