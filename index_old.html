@@ -21,116 +21,67 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/x.css">
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+	<style>
+	html { 
+	  background: url(https://upload.wikimedia.org/wikipedia/commons/9/90/VlaamseStrijdvlag.svg) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+	span.gold-bg{
+		background-color: #fef30a;
+	}
+	</style>
 </head>
-<body>
+<body id="body">
+	<audio controls autoplay>
+	  <source src="volkslied.ogg" type="audio/ogg, codecs=vorbis">
+	  <source src="volkslied.mp3" type="audio/mpeg">
+		 Uw browser wordt niet ondersteund. Misschien is het tijd voor <a href="http://browsehappy.com/?locale=nl">een beter alternatief</a>?
+	</audio>
+	
+	<div id="show_texter" style="display: block;"><strong><span class="gold-bg">Klik hier om de tekst te zien.</div></strong></div>
+	<div style="max-width: 500px; display: none;" id="songtext"><strong><span class="gold-bg">
+		Zij zullen hem niet temmen, de fiere Vlaamse Leeuw,<br>
+		Al dreigen zij zijn vrijheid met kluisters en geschreeuw.<br>
+		Zij zullen hem niet temmen, zolang een Vlaming leeft,<br>
+		Zolang de Leeuw kan klauwen, zolang hij tanden heeft.<br>
+		Zij zullen hem niet temmen, zolang een Vlaming leeft,<br>
+		Zolang de Leeuw kan klauwen, zolang hij tanden heeft.<br>
+		Zolang de Leeuw kan klauwen, zolang hij tanden heeft.<br>
+<br>
+		De tijd verslindt de steden, geen tronen blijven staan:<br>
+		De legerbenden sneven, een volk zal nooit vergaan.<br>
+		De vijand trekt te velde, omringd van doodsgevaar.<br>
+		Wij lachen met zijn woede, de Vlaamse Leeuw is daar<br>
+		Zij zullen hem niet temmen, zolang een Vlaming leeft,<br>
+		Zolang de Leeuw kan klauwen, zolang hij tanden heeft.<br>
+		Zolang de Leeuw kan klauwen, zolang hij tanden heeft.<br>
+	</span></strong></div>
+	
+	<script>
+  function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'block')
+           e.style.display = 'none';
+        else
+           e.style.display = 'block';
+     }
+	 
+	document.getElementById('body').onclick = function(e){
+		toggle_visibility('songtext');
+		toggle_visibility('show_texter');
+	}
+	
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="p1" class="segment" style="">
-  <div class="intropic">
-  </div>
-  <div class="row">
-    <div class="u-full-width textblock">
-      <h1>Vlaams, en niet anders</h1>
-      <p>
-        ‘Vlaams, en niet anders’ is de precampagne van de jongerenvleugel van
-        de Vlaamse Volksbeweging. Het is een campagne die gaat over
-        maatschappelijke waarden, met drie grote kernthema’s: zelfstandig
-        Vlaanderen, Vlaams-nationalisme en gemeenschapsvorming.
-        Deze drie thema’s geven de jongerenvleugel een fris en modern gezicht.
-      </p>
-    </div>
-  </div>
-</div>
-
-<div id="p2" class="segment" style="">
-  <div class="intropic">
-  </div>
-  <div class="row">
-    <div class="u-full-width textblock">
-      <h1>Zelfstandig Vlaanderen</h1>
-      <p>
-        De toekomst van een zelfstandig Vlaanderen ligt in handen van elke
-        Vlaming die aan de toekomst wil werken. Voor deze prachtige toekomst
-        die ons toebehoort, kunnen we nu al zorg dragen door samen te werken.
-        We moeten onze krachten bundelen om het grotere geheel te kunnen dienen:
-        een Vlaamse republiek, een fris nieuw land waarmee we Vlaamse waarden
-        voor de eenentwintigste eeuw aan heel Europa kunnen voorstellen.
-      </p>
-    </div>
-  </div>
-</div>
-
-<div id="p3" class="segment" style="">
-  <div class="intropic">
-  </div>
-  <div class="row">
-    <div class="u-full-width textblock">
-      <h1>Vlaams nationalisme</h1>
-      <p>
-        Er worden te veel clichés op de Vlaamse Beweging geplakt. Dat doorbreken
-         we voortaan heel gericht. We willen met de jongerenwerking van de
-         Vlaamse Volksbeweging Vlaanderen een internationale voortrekkersrol
-         geven. Daarom promoten we de boodschap van Vlaanderen in Europa en
-         elders in de wereld. Zo zal, hoe verscheiden een samenleving nu, morgen
-          of overmorgen ook is, ze nooit kunnen standhouden tegen de boodschap
-          en de overtuigingskracht van een Vlaamse Republiek.
-      </p>
-    </div>
-  </div>
-</div>
-
-<div id="p4" class="segment" style="">
-  <div class="intropic">
-  </div>
-  <div class="row">
-    <div class="u-full-width textblock">
-      <h1>Gemeenschaps&shy;vorming</h1>
-      <p>
-        Een stevige gemeenschap die zich voor een beter Europa inzet,
-        kan alleen tot stand komen indien de groep die actief is binnen de
-        Vlaamse Volksbeweging de hele samenleving betrekt: jong en oud, rijk en
-        arm, met of zonder stamboom in de Vlaamse Beweging. Met onze
-        jongerenwerking zetten we in op meer jongeren die zich voor Vlaanderen
-        engageren, want daar is danig nood aan. Een gemeenschap kan niet op een
-        paar uur gevormd worden: dit is een lopend proces. Geniet van
-        Vlaanderen, samen met honderden andere jongeren. Daarom kom je bij de
-        Vlaamse Volksbeweging Jongeren!
-      </p><br><br>
-      <div class="row">
-        <h1>Contact</h1>
-        <div class="six columns">Michael Discart<br/>Jongerenvoorzitter<br/><a href="mailto:michael.discart@vvb.org?subject=Vlaams en niet anders!">michael.discart@vvb.org</a></div>
-        <div class="five columns">VVB-Nationaal<br/><br/><a href="mailto:secretariaat@vvb.org?subject=Vlaams en niet anders!">secretariaat@vvb.org</a></div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="javascripts/y.js"></script>
-
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-65019845-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+	</script>
 
 </body>
 </html>
